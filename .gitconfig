@@ -1,0 +1,7 @@
+[user]
+	email = cbuquicchio@shyftanalytics.com
+  name = Christopher Buquicchio
+[core]
+	autocrlf = false
+[push]
+	default = simple
