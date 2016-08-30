@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 set ffs=unix,dos
 set autochdir
 
@@ -60,23 +58,5 @@ nnoremap << <C-w><
 " resize to equal dimensions based on splits
 nnoremap == <C-w>=
 
-" Better Whitespace
-autocmd BufWritePre * StripWhitespace
-
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_include_dirs = ['inc', 'include', 'lib', 'libs']
-let g:syntastic_cpp_compiler_options = '-std=c++11'
-
 " Listing style
 let g:netrw_liststyle=3
-
-" Airline
-let g:airline_theme='base16_eighties'
