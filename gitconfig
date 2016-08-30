@@ -3,5 +3,6 @@
   name = Christopher Buquicchio
 [core]
 	autocrlf = false
+  editor = vim
 [push]
 	default = simple
