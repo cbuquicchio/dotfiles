@@ -42,4 +42,4 @@ if [ -f "${HOME}/.git-prompt.sh" ] ; then
   source "${HOME}/.git-prompt.sh"
 fi
 
-export PS1="$(whoami)[\W] $RED\$(__git_ps1 '(%s)')$NOCOLOR $ "
+export PS1="$(whoami)[\W]$RED\$(__git_ps1 '(%s)')$NOCOLOR$ "
