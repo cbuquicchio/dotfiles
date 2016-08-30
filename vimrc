@@ -12,6 +12,8 @@ set directory=$HOME/.swapfiles/
 set t_Co=256
 set laststatus=2
 
+set cul
+
 " space and tabs
 set tabstop=2
 set softtabstop=2
