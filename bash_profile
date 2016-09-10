@@ -15,6 +15,7 @@
 
 # User dependent .bash_profile file
 RED="\[\033[1;31m\]"
+GREEN="\[\033[1;92m\]"
 NOCOLOR="\[\033[0m\]"
 
 # source the users bashrc if it exists
@@ -42,4 +43,4 @@ if [ -f "${HOME}/.git-prompt.sh" ] ; then
   source "${HOME}/.git-prompt.sh"
 fi
 
-export PS1="$(whoami)@$(hostname)[\W]$RED\$(__git_ps1 '(%s)')$NOCOLOR$ "
+export PS1="$GREEN$(whoami)@$(hostname)[\W]$RED\$(__git_ps1 '(%s)')$NOCOLOR$ "
