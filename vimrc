@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set ffs=unix,dos
 set autochdir
 
@@ -62,3 +63,6 @@ nnoremap == <C-w>=
 
 " Listing style
 let g:netrw_liststyle=3
+
+" vim better whitepspace
+autocmd BufWritePre * StripWhitespace
