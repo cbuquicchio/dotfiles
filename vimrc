@@ -16,11 +16,13 @@ set laststatus=2
 set cul
 
 " space and tabs
+set autoindent
+set noexpandtab
 set tabstop=2
 set softtabstop=2
-set expandtab
 set shiftwidth=2
 
+autocmd FileType c,h,make set tabstop=4|set softtabstop=4|set shiftwidth=4
 " UI Configuration
 set number
 set showcmd
@@ -29,6 +31,8 @@ filetype indent on
 set wildmenu
 set lazyredraw
 set showmatch
+
+set textwidth=79
 
 " Searching
 set incsearch
