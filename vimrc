@@ -12,17 +12,19 @@ set directory=$HOME/.swapfiles/
 
 set t_Co=256
 set laststatus=2
+set colorcolumn=79
 
 set cul
 
 " space and tabs
-set autoindent
-set noexpandtab
-set tabstop=2
+set expandtab
 set softtabstop=2
 set shiftwidth=2
 
-autocmd FileType c,h,make set tabstop=4|set softtabstop=4|set shiftwidth=4
+autocmd FileType c,h set shiftwidth=4|set softtabstop=4
+autocmd FileType make set noexpandtab|set shiftwidth=4|set tabstop=4
+autocmd FileType gitcommit set colorcolumn=50
+
 " UI Configuration
 set number
 set showcmd
@@ -31,8 +33,6 @@ filetype indent on
 set wildmenu
 set lazyredraw
 set showmatch
-
-set textwidth=79
 
 " Searching
 set incsearch
