@@ -18,10 +18,10 @@ set cul
 
 " space and tabs
 set expandtab
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
 
-autocmd FileType c,h set shiftwidth=4|set softtabstop=4
+autocmd FileType js set shiftwidth=4|set softtabstop=4
 autocmd FileType make set noexpandtab|set shiftwidth=4|set tabstop=4
 autocmd FileType gitcommit set colorcolumn=50
 
