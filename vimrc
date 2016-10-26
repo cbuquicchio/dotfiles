@@ -12,7 +12,7 @@ set directory=$HOME/.swapfiles/
 
 set t_Co=256
 set laststatus=2
-set colorcolumn=79
+set colorcolumn=80
 
 set cul
 
