@@ -14,10 +14,11 @@
 # a patch to the msys2 mailing list.
 
 # User dependent .bashrc file
-
+if [ -f "${HOME}/.bash_profile" ]; then
+  source "${HOME}/.bash_profile"
+fi
 # If not running interactively, don't do anything
-[[ "$-" != *i* ]] && return
-
+ [[ "$-" != *i* ]] && return
 # Shell Options
 #
 # See man bash for more options...

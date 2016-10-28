@@ -19,9 +19,9 @@ GREEN="\[\033[1;92m\]"
 NOCOLOR="\[\033[0m\]"
 
 # source the users bashrc if it exists
-if [ -f "${HOME}/.bashrc" ] ; then
-  source "${HOME}/.bashrc"
-fi
+#if [ -f "${HOME}/.bashrc" ] ; then
+#  source "${HOME}/.bashrc"
+#fi
 
 # Set PATH so it includes user's private bin if it exists
 # if [ -d "${HOME}/bin" ] ; then
@@ -37,6 +37,11 @@ fi
 # if [ -d "${HOME}/info" ]; then
 #   INFOPATH="${HOME}/info:${INFOPATH}"
 # fi
+
+# to user __git_ps1 function in Ubuntu
+if [ -f "/etc/bash_completion.d/git-prompt" ] ; then
+  source "/etc/bash_completion.d/git-prompt"
+fi
 
 # source git-prompt if it exists
 if [ -f "${HOME}/.git-prompt.sh" ] ; then
