@@ -70,3 +70,8 @@ let g:netrw_liststyle=3
 
 " vim better whitepspace
 autocmd BufWritePre * StripWhitespace
+
+" ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/tmp/*,*/dist/*,*/packages/*,*/node_modules/*,
+            \*/bower_components/*,*.so,*.swp,*.zip
