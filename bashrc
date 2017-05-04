@@ -102,6 +102,12 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+
+# On Ubuntu ~/.bash_profile is not sourced by default
+if [ -f ~/.bash_profile ]; then
+    source ~/.bash_profile
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).

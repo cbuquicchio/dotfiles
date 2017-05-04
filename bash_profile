@@ -19,9 +19,10 @@ GREEN="\[\033[1;92m\]"
 NOCOLOR="\[\033[0m\]"
 
 # source the users bashrc if it exists
-if [ -f "${HOME}/.bashrc" ] ; then
-  source "${HOME}/.bashrc"
-fi
+# Ubuntu sources ~/.bashrc by default
+#if [ -f "${HOME}/.bashrc" ] ; then
+#  source "${HOME}/.bashrc"
+#fi
 
 # Set PATH so it includes user's private bin if it exists
 # if [ -d "${HOME}/bin" ] ; then
@@ -44,3 +45,4 @@ if [ -f "${HOME}/.git-prompt.sh" ] ; then
 fi
 
 export PS1="$GREEN$(whoami)@$(hostname)[\W]$RED\$(__git_ps1 '(%s)')$NOCOLOR$ "
+export DISPLAY=:0
