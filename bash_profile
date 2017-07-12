@@ -12,6 +12,9 @@
 # environment to your liking.  If you feel a change
 # would be benifitial to all, please feel free to send
 # a patch to the msys2 mailing list.
+if [ "$0" = "-bash" ] ; then
+    source "${HOME}/.bashrc"
+fi
 
 # User dependent .bash_profile file
 RED="\[\033[1;31m\]"
@@ -20,7 +23,7 @@ NOCOLOR="\[\033[0m\]"
 
 # source the users bashrc if it exists
 # Ubuntu sources ~/.bashrc by default
-#if [ -f "${HOME}/.bashrc" ] ; then
+# if [ -f "${HOME}/.bashrc" ] ; then
 #  source "${HOME}/.bashrc"
 #fi
 

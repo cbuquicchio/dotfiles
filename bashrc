@@ -104,7 +104,7 @@ fi
 
 
 # On Ubuntu ~/.bash_profile is not sourced by default
-if [ -f ~/.bash_profile ]; then
+if [ -f ~/.bash_profile -a $0 != "-bash" ]; then
     source ~/.bash_profile
 fi
 
