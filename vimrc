@@ -21,7 +21,6 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 
-autocmd FileType javascript set shiftwidth=2|set softtabstop=2
 autocmd FileType make set noexpandtab|set shiftwidth=4|set tabstop=4
 autocmd FileType gitcommit set colorcolumn=50
 
@@ -75,3 +74,9 @@ autocmd BufWritePre * StripWhitespace
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildignore+=*/tmp/*,*/dist/*,*/packages/*,*/node_modules/*,
             \*/bower_components/*,*.so,*.swp,*.zip
+
+" ctags
+set tags=./tags;,tags;
+
+" jsx syntax highlighting
+let g:jsx_ext_required = 0
