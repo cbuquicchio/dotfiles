@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ $# -ne 0 ]
 then
     session_name=$1
