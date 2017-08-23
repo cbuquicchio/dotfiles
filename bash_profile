@@ -49,3 +49,4 @@ fi
 
 export PS1="$GREEN$(whoami)@$(hostname)[\W]$RED\$(__git_ps1 '(%s)')$NOCOLOR$ "
 export DISPLAY=:0
+PATH=~/bin:$PATH
