@@ -76,7 +76,7 @@ set wildignore+=*/tmp/*,*/dist/*,*/packages/*,*/node_modules/*,
             \*/bower_components/*,*.so,*.swp,*.zip
 
 " ctags
-set tags=./tags;,tags;
+set tags=.tags;
 
 " jsx syntax highlighting
 let g:jsx_ext_required = 0
