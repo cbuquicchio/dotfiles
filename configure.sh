@@ -1,6 +1,6 @@
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="bashrc bash_profile gitconfig vim vimrc"
+files="bashrc bash_profile ctags gitconfig vim vimrc"
 
 echo -n "Creating $olddir for backup of existing dotfiles in ~..."
 mkdir -p $olddir
