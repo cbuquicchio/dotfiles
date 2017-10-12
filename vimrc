@@ -5,6 +5,7 @@ set autochdir
 colorscheme elflord
 
 syntax on
+autocmd FileType yaml set syntax=off
 filetype on
 filetype plugin on
 
