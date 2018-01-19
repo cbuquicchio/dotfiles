@@ -23,6 +23,7 @@ set softtabstop=4
 set shiftwidth=4
 
 autocmd FileType make set noexpandtab|set shiftwidth=4|set tabstop=4
+autocmd FileType c set noexpandtab|set shiftwidth=8|set tabstop=8
 autocmd FileType gitcommit set colorcolumn=50
 
 " UI Configuration
@@ -82,3 +83,7 @@ set tags=.tags;
 " jsx syntax highlighting
 let g:jsx_ext_required = 0
 let g:javascript_plugin_flow = 1
+
+" vim-go and makefile
+set autowrite
+let g:go_fmt_command = "goimports"
