@@ -1,0 +1,9 @@
+ctrlp.vim
+editorconfig-vim
+mustache
+syntastic
+typescript-vim
+vim-better-whitespace
+vim-go
+vim-javascript
+vim-jsx
